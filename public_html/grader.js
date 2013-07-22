@@ -58,7 +58,6 @@ var checkHtmlFile = function(htmlfile, checksfile) {
 	var present = $(checks[ii]).length > 0;
 	out[checks[ii]] = present;
     }
-//	console.error(out);
     return out;
 };
 
@@ -78,7 +77,6 @@ if(require.main == module) {
 	var string = program.url.toString();
 	var file;
 	rest.get(program.url).on('complete', function(result) {
-	    // fs.writeFileSync("/var/www/sadpanda.pw/public_html/test.html", result);
 	    var checkJson = checkHtmlFile(result, program.checks);
 	    var outJson = JSON.stringify(checkJson, null, 4);
 	    console.log(outJson);
