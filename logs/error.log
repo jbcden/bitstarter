@@ -19335,3 +19335,14 @@ Listening on 5000
 Listening on 5000
 127.0.0.1 - - [Mon, 22 Jul 2013 04:04:31 GMT] "GET / HTTP/1.1" 200 9415 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36"
 127.0.0.1 - - [Mon, 22 Jul 2013 04:04:35 GMT] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36"
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:884:11)
+    at HTTPServer.Server._listen2 (net.js:1022:14)
+    at listen (net.js:1044:10)
+    at net.js:1118:9
+    at asyncCallback (dns.js:68:16)
+    at Object.onanswer [as oncomplete] (dns.js:121:9)
